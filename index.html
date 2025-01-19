@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Helaman Del Castillo</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Helaman Del Castillo | Getting to know me">
+    <meta name="author" content="Helaman Del Castillo">
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body onload="displayLastModified()">
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Helaman Del Castillo</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/helamandelcastillo/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/36?lang=eng&id=p3#p3"
+                        target="_blank">
+                        Scripture
+                    </a>
+                </li>
+                <li><a href="#finalproject" target="_blank">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="card">
+            <div class="title-box">
+                <h2>Getting to know me</h2>
+            </div>
+            <img src="images/profile.jpg" alt="My profil picture" class="profile">
+            <p class="text">Hello! My name is Helaman Del Castillo and I am from Melbourne, Australia. I enjoy watching
+                action movies and reading self-help books in my spare time. On my professional side, I have focused on
+                leveraging automation tools and frameworks to streamline the testing process, ensuring efficient and
+                effective software delivery. My expertise lies in test automation, where I have successfully implemented
+                automated testing solutions to enhance product quality and reliability.
+                I am a certified ISTQB Tester - Foundation Level (CTFL) and Test Automation Engineer (CT - TAE). These
+                certifications validate my knowledge and proficiency in testing methodologies and automation techniques.
+
+            </p>
+            <hr>
+            <img src="images/aus-flag.jpg" alt="Australian Flag" class="auflag">
+            <p class="text">Australia is a land of stunning diversity and captivating contrasts, renowned for its
+                breathtaking natural landscapes, vibrant cities, and unique wildlife. From the iconic Great Barrier
+                Reef, which draws divers and marine enthusiasts from around the globe, to the vast and remote Outback
+                with its red desert terrain and distinctive fauna like kangaroos and emus, Australia's natural beauty is
+                unparalleled. Whether exploring pristine beaches, enjoying world-class festivals, or immersing
+                in the warmth and hospitality of its people, Australia promises an unforgettable journey filled with
+                adventure and discovery.
+            </p>
+        </section>
+        <section class="card">
+            <div class="title-box">
+                <h2>Web Dev Resources</h2>
+            </div>
+            <ul class="bullet-points">
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
