@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto';
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1 rem;
+    background-color: lightblue;
+}
+
+section {
+    background-color: white;
+    border: 1px solid lightblue;
+    padding: 20px;
+}
+
+header {
+    background-color: lightblue;
+}
+
+footer {
+    background-color: lightblue;
+}
+
+.common-css {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid white;
+    padding: 20px;
+}
