@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Picture Album - Helaman Del Castillo</title>
+    <meta name="description" content="Picture Album">
+    <meta name="author" content="Helaman Del Castillo">
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body onload="displayLastModified()">
+    <header class="body-header">
+        <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home" target="_blank">Home</a></li>
+                <li><a href="#old" target="_blank">Old</a></li>
+                <li><a href="#new" target="_blank">New</a></li>
+                <li><a href="#large" target="_blank">Large</a></li>
+                <li><a href="#small" target="_blank">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <header class="main-header">
+            <h2>Home</h2>
+        </header>
+        <div class="card">
+            <img src="images/melb-temple.jpg" alt="Melbourne Australia Temple" class="temple">
+            <p class="text">Melbourne Australia Temple</p>
+        </div>
+        <div class="card">
+            <img src="images/melb-temple.jpg" alt="Melbourne Australia Temple" class="temple">
+            <p class="text">Melbourne Australia Temple</p>
+        </div>
+        <div class="card">
+            <img src="images/melb-temple.jpg" alt="Melbourne Australia Temple" class="temple">
+            <p class="text">Melbourne Australia Temple</p>
+        </div>
+        <div class="card">
+            <img src="images/melb-temple.jpg" alt="Melbourne Australia Temple" class="temple">
+            <p class="text">Melbourne Australia Temple</p>
+        </div>
+        <div class="card">
+            <img src="images/melb-temple.jpg" alt="Melbourne Australia Temple" class="temple">
+            <p class="text">Melbourne Australia Temple</p>
+        </div>
+        <div class="card">
+            <img src="images/melb-temple.jpg" alt="Melbourne Australia Temple" class="temple">
+            <p class="text">Melbourne Australia Temple</p>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
