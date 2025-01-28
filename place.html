@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Activity - Helaman Del Castillo</title>
+    <meta name="description" content="Country Activity">
+    <meta name="author" content="Helaman Del Castillo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body onload="displayLastModified(); calculateWindChill();">
+    <header>
+        <h1>Australia</h1>
+    </header>
+    <main class="main-content">
+        <picture>
+            <source media="(min-width: 500px)" srcset="images/aus-photo.webp">
+            <source srcset="images/aus-photo-opera.webp">
+            <img src="images/aus-photo-opera.webp" alt="Hero Image">
+        </picture>
+        <section class="card" id="data">
+            <div class="title-box">
+                <h2 class="data-heading">Data</h2>
+            </div>
+            <ul class="content-box">
+                <li>Area: 7.741 million km²<span id="area"></span></li>
+                <li>Population: 26.64 million (2023)<span id="population"></span></li>
+                <li>Capital: Canberra<span id="Capital"></span></li>
+                <li>Languages: English<span id="Languages"></span></li>
+                <li>Currency: Australian Dollar<span id="Currency"></span></li>
+                <li>Time Zone: UTC+10:00<span id="timeZone"></span></li>
+                <li>Calling Code: +61<span id="callingCode"></span></li>
+                <li>International LTD: .au<span id="intLtd"></span></li>
+            </ul>
+        </section>
+        <section class="card" id="weather">
+            <div class="title-box">
+                <h2 class="weather-heading">Weather</h2>
+                <img class="weather-icon" src="images/temp-icon.svg" alt="Temperature" width="50">
+            </div>
+            <ul class="content-box">
+                <li>Temperature: <span id="temperature">10</span> °C</li>
+                <li>Conditions: Partly cloudy and chilly</li>
+                <li>Wind: <span id="wind">15</span> km/h</li>
+                <li>Windchill: <span id="windchill"></span> °C</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+:root {
+    --text-align: center;
+    --primary-color: white;
+
+}
+
+header {
+    background: blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: var(--text-align);
+    color: var(--primary-color);
+}
+
+h1,
+h2 {
+    font-family: 'Gochi Hand';
+    color: var(--primary-color);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+.card {
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: var(--text-align);
+}
+
+footer {
+    background: red;
+    padding: 1rem;
+}
+
+p {
+    text-align: center;
+    margin: 15px;
+    padding: 1px;
+    color: var(--primary-color);
+}
+
+.title-box {
+    background-color: blue;
+    color: var(--primary-color);
+    padding: 10px;
+    text-align: var(--text-align);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.content-box {
+    list-style-type: none;
+    color: var(--primary-color);
+}

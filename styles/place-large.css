@@ -1,0 +1,31 @@
+@media screen and (min-width: 500px) {
+
+    .weather-heading::after {
+        content: '  ⛅';
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+    #data {
+        float: right;
+        width: 40%;
+        height: 30%;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+
+    #weather {
+        float: left;
+        width: 40%;
+        height: 20%;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+
+    .card {
+        margin-top: 20px;
+    }
+
+}
