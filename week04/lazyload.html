@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <author>Helaman Del Castillo</author>
+    <script src="scripts/lazyload.js" defer></script>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body onload="displayLastModified()">
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/melb-temple.jpg" alt="Melbourne Australia Temple" loading="lazy" class="temple" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/600x400/jpeg" alt="Melbourne Australia Temple" loading="lazy" class="temple"
+                width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/600x450/jpeg" alt="Melbourne Australia Temple" loading="lazy" class="temple"
+                width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placehold.co/600x500/jpeg" alt="Melbourne Australia Temple" loading="lazy" class="temple"
+                width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placeholder.pics/svg/400x750" alt="Melbourne Australia Temple" loading="lazy"
+                class="temple" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://placeholder.pics/svg/400x650" alt="Melbourne Australia Temple" loading="lazy"
+                class="temple" width="400" height="600">
+        </picture>
+
+
+
+
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
