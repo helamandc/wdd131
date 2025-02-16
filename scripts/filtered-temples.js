@@ -74,12 +74,12 @@ const temples = [
     },
     // Additional 3 temples:
     {
-        templeName: "Cebu City Philippines Temple",
-        location: "Cebu City, Philippines",
-        dedicated: "2010, June, 13",
+        templeName: "Hong Kong China Temple",
+        location: "Hong Kong, China",
+        dedicated: "1996, May, 26",
         area: 10000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/cebu-city-philippines-temple/cebu-city-philippines-temple-3999.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/hong-kong-china/400x250/hong_kong_china_temple_sealing_room.jpeg"
     },
     {
         templeName: "Melbourne Australia Temple",
@@ -87,7 +87,7 @@ const temples = [
         dedicated: "2000, June, 6",
         area: 20000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/melbourne-australia-temple/melbourne-australia-temple-4403.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/melbourne-australia/400x250/melbourne-australia-temple-lds-1029730-wallpaper.jpg"
     },
     {
         templeName: "Sydney Australia Temple",
@@ -95,9 +95,65 @@ const temples = [
         dedicated: "1984, September, 20",
         area: 30000,
         imageUrl:
-            "https://churchofjesuschristtemples.org/assets/img/temples/sydney-australia-temple/sydney-australia-temple-16030.jpg"
+            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sydney-australia/400x250/sydney-australia-temple-766362-wallpaper.jpg"
     },
 ];
 
+createTempleCard(temples);
 
+const homeTemple = document.querySelector("#home");
+const oldTemple = document.querySelector("#old");
+const newTemple = document.querySelector("#new");
+const smallTemple = document.querySelector("#small");
+const largeTemple = document.querySelector("#large");
+
+homeTemple.addEventListener("click", () => {
+    createTempleCard(temples)
+});
+
+oldTemple.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("198")));
+});
+
+newTemple.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.dedicated.includes("200")));
+});
+
+smallTemple.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area <= 100000));
+});
+
+largeTemple.addEventListener("click", () => {
+    createTempleCard(temples.filter(temple => temple.area > 100000));
+});
+
+function createTempleCard(filteredTemples) {
+    document.querySelector(".res-grid").innerHTML = "";
+    filteredTemples.forEach(temple => {
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
+
+        name.textContent = temple.templeName;
+        location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+        dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+        area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", `${temple.templeName} Temple`);
+        img.setAttribute("loading", "lazy");
+
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        document.querySelector(".res-grid").appendChild(card);
+
+    })
+
+}
 

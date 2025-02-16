@@ -6,7 +6,25 @@
     }
 
     .main-content {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+
+    .res-grid {
+        background-color: #ddd;
+        border: 1px solid #ccc;
+        padding: 20px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    section {
+        background-color: #ddd;
+        border: 10px solid #ccc;
+        padding: 20px;
+        text-align: center;
+    }
+
 
 }
