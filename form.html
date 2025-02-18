@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Helaman Del Castillo</title>
+    <meta name="description" content="Product Review">
+    <meta name="author" content="Helaman Del Castillo">
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts links -->
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body onload="displayLastModified()">
+    <header class="body-header">
+        <h1>Product Review</h1>
+    </header>
+    <main class="main-compose">
+        <form method="get" action="#">
+            <fieldset>
+                <label>Product Name <br>
+                    <select id="myDropdown" name="items">
+                        <option value="" disabled selected>Choose a product...</option>
+                        <option value="computer">Computer</option>
+                        <option value="eftpos">Eftpos Terminal</option>
+                        <option value="printer">Printer</option>
+                    </select>
+                </label>
+                <label>Overall Rating <br>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="options" value="1"> ☆
+                        </label>
+                        <label>
+                            <input type="radio" name="options" value="2"> ☆☆
+                        </label>
+                        <label>
+                            <input type="radio" name="options" value="3"> ☆☆☆
+                        </label>
+                        <label>
+                            <input type="radio" name="options" value="4"> ☆☆☆☆
+                        </label>
+                        <label>
+                            <input type="radio" name="options" value="5"> ☆☆☆☆☆
+                        </label>
+                    </div>
+                </label>
+                <label>Date of Installation <input type="date" name="date" required></label>
+                <label>Which features did you find useful in the product?<br><i>(Check all that apply)</i>
+                    <ul class="checklist">
+                        <li>
+                            <label>
+                                <input type="checkbox"> Durability
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"> Ease of Use
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"> Performance
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox"> Design
+                            </label>
+                        </li>
+                    </ul>
+                </label>
+
+                <label>Written review (Optional) <textarea name="moments" required></textarea></label>
+                <label>Your Name (Optional) <input type="text" name="place" required></label>
+            </fieldset>
+            <input type="submit" value="Post Review" id="add-submit">
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 🌏 Melbourne, Australia 🌏 Helaman Del Castillo</p>
+        <p>Last modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
